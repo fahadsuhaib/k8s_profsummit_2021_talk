@@ -9,17 +9,17 @@
 sudo snap install microk8s --classic --channel=1.19
 ```
 
-- Enable DNS addon
-
-```
-microk8s enable dns
-```
-
 - Add current user to microk8s group
 
 ```
 sudo usermod -aG microk8s $USER
 newgrp microk8s
+```
+
+- Enable DNS addon
+
+```
+microk8s enable dns
 ```
 
 - Add alias to .bashrc
