@@ -9,6 +9,12 @@
 sudo snap install microk8s --classic --channel=1.19
 ```
 
+- Enable DNS addon
+
+```
+microk8s enable dns
+```
+
 - Add current user to microk8s group
 
 ```
@@ -42,5 +48,36 @@ k get nodes
 k get pods
 ```
 
-## Run a Hello World App + NGINX
+## Run a Hello World App
 
+- Run Deployment
+
+```
+k apply -f examples/kube/deployment.yaml
+```
+
+- Verify pods
+
+```
+k get po
+
+k describe po <POD_ID>
+```
+
+- Run SVC
+
+```
+k apply -f examples/kube/svc.yaml
+```
+
+- Verify svc
+
+```
+k get svc
+```
+
+- Hit CURL to verify
+
+```
+curl -v http://<SVC_CLUSTER_IP>:3000
+```

@@ -56,3 +56,4 @@ lock**
 **/contentData/*
 **/scriptResources/*
 run.sh
+*.pem
