@@ -1,0 +1,58 @@
+# Rules Reference
+# http://philhosoft.github.io/Software/Git-gitignore-rules/
+
+# Temp files
+tmp/**
+.tmp/**
+
+# Sass
+.sass-cache
+
+# Logs
+logs
+*.log
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directory
+node_modules
+node_modules/*
+node_modules/*/**
+
+# OS generated files
+.DS_STORE
+
+# Thumbnails
+._*
+Thumbs.db
+*.zip
+
+# Editors stuff
+.idea
+.project
+.vscode
+
+# Build stuff
+dist*/**
+/app/dist*/**
+dist
+
+# Testing
+/coverage
+/.test
+lock**
+.next
+/.next
+/static/lib/*
+/itsy/static/lib/*
+*.log
+/dist
+/external/**
+*lock**
+# ignore the auditnow-zip
+*.zip
+*.settings/
+**/contentData/*
+**/scriptResources/*
+run.sh
